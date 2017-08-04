@@ -1,11 +1,12 @@
 'use strict';
 
-module.exports = (server, services) => {
-
+module.exports = ({ ReposModel }) => {
+  console.log("ReposModel", ReposModel);
   return {
-
-    getRepos() {
-      githubServices.getRepos
+    getAll(request, reply) {
+      ReposModel.getAll()
+        .then(repos => reply(repos))
+        .catch(err => reply(err));
     }
   }
 }

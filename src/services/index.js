@@ -2,6 +2,7 @@
 
 module.exports = () => {
   return {
-    MarkdownService: require('./MarkdownService')()
+    MarkdownService: require('./MarkdownService')(),
+    GithubService: require('./GithubService')()
   };
 };

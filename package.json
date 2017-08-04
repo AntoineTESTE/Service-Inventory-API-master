@@ -11,12 +11,17 @@
   "license": "ISC",
   "dependencies": {
     "async": "^2.5.0",
+    "common-env": "^6.1.0",
     "github": "^9.2.0",
     "hapi": "^16.5.0",
+    "hapi-swagger": "^7.7.0",
+    "inert": "^4.2.1",
     "lodash": "^4.17.4",
     "markdown": "^0.5.0",
     "requestretry": "^1.12.0",
     "safe-json-parse": "^4.0.0",
-    "when": "^3.7.8"
+    "vision": "^4.1.1",
+    "when": "^3.7.8",
+    "winston": "^2.3.1"
   }
 }

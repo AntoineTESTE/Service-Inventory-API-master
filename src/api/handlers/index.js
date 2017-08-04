@@ -1,7 +1,7 @@
 'use strict';
 
-module.exports = (server, services) => {
+module.exports = (models) => {
   return {
-    repos: require('./github')(server, services),
+    repos: require('./repos')(models)
   };
 };

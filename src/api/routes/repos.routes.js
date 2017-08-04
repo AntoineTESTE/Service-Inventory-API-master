@@ -1,18 +1,15 @@
-// Routes Github
-
 'use strict';
 
-// Export des Routes des stats
-module.exports = (server, handlers) => {
-
+module.exports = (server, handlers, validations) => {
   server.route({
-    method: 'POST',
+    method: 'GET',
     path: '/repos',
     config: {
       description: 'Github repos',
       notes: ['api'],
       tags: ['api'],
-      handler: repos.getRepos,
+      handler: handlers.repos.getAll,
+      validate: validations.repos.getAll
     }
   });
 }
