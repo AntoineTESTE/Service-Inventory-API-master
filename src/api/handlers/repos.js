@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = ({ ReposModel }) => {
-  console.log("ReposModel", ReposModel);
   return {
     getAll(request, reply) {
       ReposModel.getAll()

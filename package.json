@@ -2,9 +2,10 @@
   "name": "repos-architecture",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,7 @@
     "inert": "^4.2.1",
     "lodash": "^4.17.4",
     "markdown": "^0.5.0",
+    "nodemon": "^1.11.0",
     "requestretry": "^1.12.0",
     "safe-json-parse": "^4.0.0",
     "vision": "^4.1.1",
